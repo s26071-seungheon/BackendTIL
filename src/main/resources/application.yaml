@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    # MySQL 연결 정보
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/assignment_db?serverTimezone=Asia/Seoul&useSSL=false&allowPublicKeyRetrieval=true
+    username: root
+    password: "*Choi2125*"
+
+  jpa:
+    # 엔티티를 보고 테이블을 자동으로 생성/수정 (매우 중요!)
+    hibernate:
+      ddl-auto: update
+    # 실행되는 SQL을 콘솔창에 예쁘게 보여줌
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.MySQLDialect
